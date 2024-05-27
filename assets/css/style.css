@@ -239,17 +239,17 @@ input[type="submit"] {
 
     header > div > img { 
         display: block;
-        margin: 0 auto;
+        margin-inline: auto;
     }
 
     header > div > span {
         display: block;
-        margin: 2rem auto;
+        margin-inline: auto;
         font-size: 1.5rem;
     }
 
     header > nav > li {
-        display: inline-block;
+        display: inline;
     }
 
     h1 {
@@ -315,33 +315,31 @@ input[type="submit"] {
 
 
 @media screen and (min-width: 1200px) {
-    body {
-        width: 100%;
-        
-    }
 
-    header{
-        margin-inline: auto;
-        width: 80%;        
-    }
+header{
+    padding: 1em;
+    width: 80%;
+    margin-inline: auto;
+}
 
-    
-    #logoTitleContainer, #navBar {
-        margin: 10px;
+    header > div > img { 
         display: inline-block;
+        margin: 0 auto;
+
     }
 
-/* TODO: sistemare la ul nela nav*/
-    nav {
-        text-align: right;
-        list-style: none;
-    }
+    /* header > div > span {
+        display: inline-block;
+        margin: 2rem auto;
+        font-size: 1.5rem;
+    } */
 
-    #navBar {
-        margin-left: 55em;
+
+    header div p, header > nav > ul, header div, header nav {
         display: inline-block;
         text-align: right;
     }
+
 
     main{
         width: 80%;
@@ -355,26 +353,23 @@ input[type="submit"] {
     }
 
     /* TODO: sistemare le due sezioni */
-    #sectionArticle {
-        display: table;
-        vertical-align: middle;
-        width: 100%;
-        margin: 0 auto;
-    }
 
 
     iframe {
-        display: table-cell;
-        vertical-align: middle;
-        width: 90%;
-        height: 30vh;
-        margin: 2rem 0;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 50%;
+        height: 20vh;
+        margin-right: -2px;
     }
 
     section {
-        display: table-cell;
-        vertical-align: middle;
-        width: 48%;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 50%;
+        margin-right: -2px;
+        height: 20vh;
+        border-radius: 2rem;
 
     }
 
